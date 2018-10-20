@@ -1,0 +1,24 @@
+<!doctype html>
+<html>
+<title>Homepage</title>
+<link rel="stylesheet" type="text/css" href="{{url_for('static', filename='style.css')}}">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
+<body>
+  <div class="container-fluid text-center bg-grey">
+    <h1>Diabetes Predictor</h1>
+    <h3>Enter following details</h3>
+
+      <form action = "http://localhost:5000/predict" method = "POST" class="w3-container">
+         <p>Height(in meters) <input type = "text" name = "height" /></p>
+         <p>Weight (in kgs) <input type = "text" name = "weight" /></p>
+         <p>Blood Pressure <input type = "text" name = "bp" /></p>
+         <p>Glucose <input type ="text" name = "glucose" /></p>
+         <p>Age <input type ="text" name = "age" /></p>
+         <p>Insulin <input type ="text" name = "insulin" /></p>
+         <p><input type = "submit" value = "submit" /></p>
+      </form>
+  </div>
+</body>
+</html>
