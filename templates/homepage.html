@@ -10,15 +10,20 @@
     <h1>Diabetes Predictor</h1>
     <h3>Enter following details</h3>
 
-      <form action = "http://localhost:5000/predict" method = "POST" class="w3-container">
-         <p>Height(in meters) <input type = "text" name = "height" /></p>
-         <p>Weight (in kgs) <input type = "text" name = "weight" /></p>
-         <p>Blood Pressure <input type = "text" name = "bp" /></p>
-         <p>Glucose <input type ="text" name = "glucose" /></p>
-         <p>Age <input type ="text" name = "age" /></p>
-         <p>Insulin <input type ="text" name = "insulin" /></p>
-         <p><input type = "submit" value = "submit" /></p>
+      <form action = "http://localhost:5000" method = "POST" class="w3-container">
+         <p>Height(in meters) <input type = "text" name = "height" required /></p>
+         <p>Weight (in kgs) <input type = "text" name = "weight" required /></p>
+         <p>Blood Pressure <input type = "text" name = "bp" required/></p>
+         <p>Glucose <input type ="text" name = "glucose" required/></p>
+         <p>Age <input type ="text" name = "age" required/></p>
+         <p>Insulin <input type ="text" name = "insulin" required/></p>
+         <p><input type = "submit" value = "submit" required/></p>
       </form>
+
+      <div class="w3-container">
+      <p>Bmi : {{bmi}} kg/m^2</p>
+      <p>Prediction: {{answer}}</p>
+    </div>
   </div>
 </body>
 </html>
