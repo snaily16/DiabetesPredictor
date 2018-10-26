@@ -1,13 +1,10 @@
 # DiabetesPredictor
-To predict whether a user has diabetes or not based on their inputs. I have used Logistic Regression algorithm in this project.
+DiabetesPredictor is a web app to predict whether a user has diabetes or not based on their inputs. 
 
-## Overview
-* train.py - to train and create our pickle model
-* templates - this folder contains our html templates
-* static - this folder contains css files
+## Overview 
+I have used Logistic Regression algorithm in this project to train the model - [train.py](https://github.com/snaily16/DiabetesPredictor/blob/master/train.py). Here, I have used pickle to save the trained model which is then used in [main.py](https://github.com/snaily16/DiabetesPredictor/blob/master/main.py) to predict the result.
 
 ## Dependencies
-* Python3
 * Numpy
 * Pandas
 * Sklearn
@@ -15,4 +12,5 @@ To predict whether a user has diabetes or not based on their inputs. I have used
 
 ## Usage
 Run this command : ```python3 main.py```
+
 To view the data analysis open [this](https://github.com/snaily16/DiabetesPredictor/blob/master/Diabetes.ipynb) jupyter notebook 
