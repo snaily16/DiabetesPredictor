@@ -1,4 +1,4 @@
-# DiabetesPredictor
+# DiabetesPredictor [![](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
 DiabetesPredictor is a web app to predict whether a user has diabetes or not based on their inputs. 
 
 ## Overview 
